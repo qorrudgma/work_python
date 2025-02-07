@@ -6,36 +6,36 @@
 # list2=list(range(1,21,2))
 # print(list2)
 
-# color = ["빨강","주황","노랑","초록","파랑","남색","보라"]
+#===============================================================
+
+color = ["빨강","주황","노랑","초록","파랑","남색","보라"]
 # print(color[0])
 # print(color[2:6])
 
-# colors = ["빨강","파랑","노랑","검정","초록"]
+# for c in color:
+#     # print(c)
+#     print("나는 %s을 좋아한다." %c)
 
-# for color in colors:
-#     # print(color)
-#     print("나는 %s을 좋아한다." %color)
-
-# n = len(colors)
+# n = len(color)
 # for i in range(0,n):
-#     print("나는 %s을 좋아한다." %colors[i])
-
-# animals=["코끼리","호랑이","사슴","펭귄","여우"]
+#     print("나는 %s을 좋아한다." %color[i])
 
 # i=0
-# while i<len(animals):
-#     print(animals[i])
+# while i<len(color):
+#     print(i,":",color[i])
 #     i+=1
 
-# flowers = ["목련","벚꽃","장미","백일홍"]
-# print(flowers[1])
-# flowers[1]="무궁화"
-# print(flowers)
+# print(color)
+# print(color[1])
+# color[1]="황금색"
+# print(color)
+# print(color[1])
 
-# arr=[5,3,12,9,2]
-# print(arr)
-# arr.append(10)      #마지막에 10추가
-# print(arr)
+print(color)
+color.append("실버")      #마지막에 주어진 값 추가
+print(color)
+
+#==============================================================
 
 # scores = []
 
@@ -151,10 +151,9 @@
 #     x=sentence.replace(" ","_")
 #     print(x)
 
-number=[[10,20,30],[40,50,60,70,80,90]]
+# number=[[10,20,30],[40,50,60,70,80,90]]
 
-print(number[0])
-print(number[0][0])
-print(number[0][1])
-print(number[1][3])
-
+# print(number[0])
+# print(number[0][0])
+# print(number[0][1])
+# print(number[1][3])
