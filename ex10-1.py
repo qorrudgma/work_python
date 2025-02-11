@@ -37,36 +37,36 @@
 #====================================
 
 # # with open("scores.txt", "r", encoding="utf-8") as f:   #별칭 f로 하겠다(파일도 자동으로 닫힘)
-# f = open("scores.txt", "r", encoding="utf-8")   #별칭 f로 하겠다(파일도 자동으로 닫힘)
-# lines=f.readlines()
+f = open("scores.txt", "r", encoding="utf-8")   #별칭 f로 하겠다(파일도 자동으로 닫힘)
+lines=f.readlines()
 
-# for line in lines:
-#     data=line.split()
-#     i=0
-#     sum=0
-#     while i<len(data):
-#         if i==0:
-#             print(data[i], end=" : ")
-#         else:
-#             sum+=int(data[i])
-#         i+=1
-#     avg=sum/(len(data)-1)
-#     print("%.1f점" %avg)
+for line in lines:
+    data=line.split()
+    i=0
+    sum=0
+    while i<len(data):
+        if i==0:
+            print(data[i], end=" : ")
+        else:
+            sum+=int(data[i])
+        i+=1
+    avg=sum/(len(data)-1)
+    print("%.1f점" %avg)
 
-# print("파일읽기완료!")
+print("파일읽기완료!")
 
-# f.close()
+f.close()
 
 #====================================
 
-import os
+# import os
 
-# if os.path.exists("scores2.txt"):  #파일이 있으면 삭제 없으면 아래 출력
-#     os.remove("scores2.txt")
-if os.path.exists("scores2"):  #폴더가 있으면 삭제 없으면 아래 출력
-    os.rmdir("scores")
-else:
-    print("파일이 존재하지 않음!")
+# # if os.path.exists("scores2.txt"):  #파일이 있으면 삭제 없으면 아래 출력
+# #     os.remove("scores2.txt")
+# if os.path.exists("scores2"):  #폴더가 있으면 삭제 없으면 아래 출력
+#     os.rmdir("scores")
+# else:
+#     print("파일이 존재하지 않음!")
 
 
 
@@ -85,6 +85,53 @@ else:
 
 # a = open("test.txt", "a", encoding="utf-8")
 # lines_a=r.write()
+
+# append를 사용하지말고 그냥 인풋 값을들 나열하고 그대로 텍스트에다가 넣으면 되지않을까?
+# 추가를하고 그 것들을 반복문으로 돌리자 if를 사용해서 특정 단어나 행동을 취하면 멈추게하기
+
+
+날씨 데이터 오픈api가져올수있으니까 그거 가져와서 그걸로 내가 원하는 날짜를 고르면 그날의 기온들 알게하기
+
+
+
+
+
+
+
+
+
+
+
+
+
+score=""
+
+while score:
+    name = input("이름 입력: ")
+    score1=int(input("점수1 입력: "))
+    score2=int(input("점수2 입력: "))
+    score3=int(input("점수3 입력: "))
+    score4=int(input("점수4 입력: "))
+    score5=int(input("점수5 입력: "))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 input1=input("이름 입력: ")
 input2=int(input("점수1 입력: "))
 input3=int(input("점수2 입력: "))
