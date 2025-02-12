@@ -37,25 +37,25 @@
 #====================================
 
 # # with open("scores.txt", "r", encoding="utf-8") as f:   #별칭 f로 하겠다(파일도 자동으로 닫힘)
-f = open("scores.txt", "r", encoding="utf-8")   #별칭 f로 하겠다(파일도 자동으로 닫힘)
-lines=f.readlines()
+# f = open("scores.txt", "r", encoding="utf-8")   #별칭 f로 하겠다(파일도 자동으로 닫힘)
+# lines=f.readlines()
 
-for line in lines:
-    data=line.split()
-    i=0
-    sum=0
-    while i<len(data):
-        if i==0:
-            print(data[i], end=" : ")
-        else:
-            sum+=int(data[i])
-        i+=1
-    avg=sum/(len(data)-1)
-    print("%.1f점" %avg)
+# for line in lines:
+#     data=line.split()
+#     i=0
+#     sum=0
+#     while i<len(data):
+#         if i==0:
+#             print(data[i], end=" : ")
+#         else:
+#             sum+=int(data[i])
+#         i+=1
+#     avg=sum/(len(data)-1)
+#     print("%.1f점" %avg)
 
-print("파일읽기완료!")
+# print("파일읽기완료!")
 
-f.close()
+# f.close()
 
 #====================================
 
@@ -80,8 +80,8 @@ f.close()
 
 #====================================
 
-# r = open("test.txt", "r", encoding="utf-8")   #별칭 f로 하겠다(파일도 자동으로 닫힘)
-# lines_r=r.readlines()
+r = open("test.txt", "r", encoding="utf-8")   #별칭 f로 하겠다(파일도 자동으로 닫힘)
+lines_r=r.readlines()
 
 # a = open("test.txt", "a", encoding="utf-8")
 # lines_a=r.write()
@@ -90,17 +90,25 @@ f.close()
 # 추가를하고 그 것들을 반복문으로 돌리자 if를 사용해서 특정 단어나 행동을 취하면 멈추게하기
 
 
-날씨 데이터 오픈api가져올수있으니까 그거 가져와서 그걸로 내가 원하는 날짜를 고르면 그날의 기온들 알게하기
 
 
+for line in lines_r:
+    data=line.split()
+    i=0
+    sum=0
+    while i<len(data):
+        if i==0:
+            print(data[i], end=" : ")
+        else:
+            sum+=int(data[i])
+        i+=1
+    avg=sum/(len(data)-1)
+    print("%.1f점" %avg)
 
+print("파일읽기완료!")
+r.close()
 
-
-
-
-
-
-
+# 날씨 데이터 오픈api가져올수있으니까 그거 가져와서 그걸로 내가 원하는 날짜를 고르면 그날의 기온들 알게하기
 
 
 
@@ -118,49 +126,17 @@ while score:
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-input1=input("이름 입력: ")
-input2=int(input("점수1 입력: "))
-input3=int(input("점수2 입력: "))
-input4=int(input("점수3 입력: "))
-input5=int(input("점수4 입력: "))
-input6=int(input("점수5 입력: "))
-score=[]
-j=0
-while j<7:
-    score.append("input%d"%j)
-    j+=1
+# input1=input("이름 입력: ")
+# input2=int(input("점수1 입력: "))
+# input3=int(input("점수2 입력: "))
+# input4=int(input("점수3 입력: "))
+# input5=int(input("점수4 입력: "))
+# input6=int(input("점수5 입력: "))
+# score=[]
+# j=0
+# while j<7:
+#     score.append("input%d"%j)
+#     j+=1
 
 # for name in name:
 #      f.write(name+"\n")
-
-
-# for line in lines_r:
-#     data=line.split()
-#     i=0
-#     sum=0
-#     while i<len(data):
-#         if i==0:
-#             print(data[i], end=" : ")
-#         else:
-#             sum+=int(data[i])
-#         i+=1
-#     avg=sum/(len(data)-1)
-#     print("%.1f점" %avg)
-
-# print("파일읽기완료!")
-
-# r.close()
